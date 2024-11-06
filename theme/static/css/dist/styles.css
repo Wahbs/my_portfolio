@@ -932,6 +932,16 @@ select {
   margin-bottom: 1rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -966,6 +976,10 @@ select {
 
 .ms-20 {
   margin-inline-start: 5rem;
+}
+
+.ms-1 {
+  margin-inline-start: 0.25rem;
 }
 
 .block {
