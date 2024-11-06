@@ -1,0 +1,880 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="container flex flex-wrap my-2 md:py-5 p-2 justify-center items-center" id="">
+        <!-- ################### Page 1 ####################-->
+        <div class="container grid grid-cols-1 md:grid-cols-4 w-full items-center justify-center min-h-screen" id="affiche">
+            <div class="flex flex-wrap col-start-1 items-center justify-center">
+                <img src="{% static 'img/image1.jpg' %}" class="rounded-md md:h-2/3 w-auto" alt="Image profile">
+
+                <div class="md:hidden md:col-start-2 col-span-3 p-5 w-full items-center justify-center">
+                    <div class="m1 md:m2 items-center justify-center">
+                        <h1 class="text-3xl md:text-4xl text-center font-bold text-gray-700 dark:text-gray-100">ABDOUL HABOU</h1>
+                        <p class="text-gray-900 px-2 text-center  dark:text-white">Ingénieur de conception en infomatique</p>
+                        <div class="container p-4 flex flex-row gap-5 items-center justify-center">
+                            <span class="dark:text-gray-100"><i class="bi bi-github" style="font-size: 1.5rem;"></i></span>
+                            <span class="dark:text-gray-100"><i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></span>
+                            <span class="dark:text-gray-100"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></span>
+                            <span class="dark:text-gray-100"><i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i></span>
+                            <span class="dark:text-gray-100"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></span>
+                            <span class="dark:text-gray-100"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></span>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+            <!-- *************** PAGE 2 pour petit ecran ***********************-->
+            <div class="flex md:col-start-2 col-span-3 p-5 w-full max-md:hidden items-center justify-center min-h-screen">
+                <div class="m-1 md:m-2 items-center justify-center">
+                    <h1 class="text-3xl md:text-4xl text-center font-bold text-gray-900 dark:text-gray-100">ABDOUL HABOU</h1>
+                    <p class="text-gray-800 px-2 text-center  dark:text-white">Ingénieur de conception en infomatique</p>
+                    <div class="container p-4 flex flex-row gap-5 items-center justify-center">
+                        <span class="dark:text-gray-100 text-gray-800"><i class="bi bi-github" style="font-size: 1.5rem;"></i></span>
+                        <span class="dark:text-gray-100 text-gray-800"><i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></span>
+                        <span class="dark:text-gray-100 text-gray-800"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></span>
+                        <span class="dark:text-gray-100 text-gray-800"><i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i></span>
+                        <span class="dark:text-gray-100 text-gray-800"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></span>
+                        <span class="dark:text-gray-100 text-gray-800"><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></span>
+                    </div>
+                </div>           
+            </div>
+        </div>
+
+        <!-- ############ Page 2 : a propos de l'auteur ###############-->
+        <div class="container flex flex-wrap w-full min-h-screen justify-center p-2 md:p-5" id="apropos">
+            <div class="my-2 text-center">
+                <span class="font-bold dark:text-gray-100 text-gray-800 text-2xl">&Aacute; propos</span> 
+                <div class="w-full bg-gray-200 rounded-full my-4 h-0.5 dark:bg-gray-700 items-center justify-center">
+                    <div class="bg-blue-600 h-0.5 rounded-full justify-center items-center" style="width: 18%"></div>
+                </div>
+                <span class="text-md dark:text-gray-100 text-gray-800">
+                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                </span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4">
+                <div class="col-span-1 col-start-1 flex justify-center items-top">
+                    <img src="{% static 'img/img-apropo.jpg' %}" class="h-2/3 rounded-md" alt="">
+                </div>
+                <div class="md:col-start-2 col-span-3">
+                    <div class="font-bold my-4 text-gray-800 dark:text-gray-100 text-xl">
+                        DATA SCIENTIST / DATA ANALYST / DEVELOPPEUR WEB & MOBILE
+                    </div>
+                    <span class="font-normal text-gray-800 dark:text-gray-100 text-md">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </span>
+                    <div class="md:grid md:grid-cols-2 md:gap-3 my-4 text-gray-800 dark:text-gray-100">
+                        <div class="col-start-1 mb-1 max-md:m-2">
+                            <i class="bi bi-chevron-right text-blue-500 mx-1"></i>
+                            <span class="font-bold">Date de naissance : </span> 26 juin 2000
+                        </div>
+                        <div class="col-start-2 mb-1 max-md:m-2">
+                            <i class="bi bi-chevron-right text-blue-500 mx-1"></i>
+                            <span class="font-bold">Ville d'origine : </span> Garoua, Cameroun
+                        </div>
+                        <div class="col-start-1 mb-1 max-md:m-2">
+                            <i class="bi bi-chevron-right text-blue-500 mx-1"></i>
+                            <span class="font-bold">Téléphone : </span> (+237) 692921604
+                        </div>
+                        <div class="col-start-2 mb-1 max-md:m-2">
+                            <i class="bi bi-chevron-right text-blue-500 mx-1"></i>
+                            <span class="font-bold">E-mail : </span> abdoulhabou.ing@gmail.com
+                        </div>
+                        <div class="col-start-1 mb-1 max-md:m-2">
+                            <i class="bi bi-chevron-right text-blue-500 mx-1"></i>
+                            <span class="font-bold">Niveau d'étude : </span> Master 2
+                        </div>
+                        <div class="col-start-2 mb-1 max-md:m-2">
+                            <i class="bi bi-chevron-right text-blue-500 mx-1"></i>
+                            <span class="font-bold">Freelance : </span> Disponible
+                        </div>
+                        <div class="my-0 col-span-3 text-center flex justify-start items-start">
+                            <span class="text-md dark:text-gray-100 text-gray-800">
+                                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ############ Page 3 : compétences ###############-->
+        <div class="container flex flex-wrap w-full min-h-screen items-center justify-center " id="competences">
+            <!-- Tabs group -->
+             <div class="my-2 text-center w-full">
+                <span class="font-bold dark:text-gray-100 text-gray-800 text-2xl">Compétences</span> 
+                <div class="w-full bg-gray-200 rounded-full my-4 h-0.5 dark:bg-gray-700 items-center justify-center">
+                    <div class="bg-blue-600 h-0.5 rounded-full justify-center items-center" style="width: 34%"></div>
+                </div>
+             </div>
+            <div class="tabs-group bg-slate-50 dark:bg-slate-800  p-1 md:p-2 my-3 rounded-lg w-full m-1 md:m-5">
+                <div class="tabs-container text-gray-800 dark:text-gray-100">
+                    <div class="tabs bg-gray-200 dark:bg-slate-700">
+                        <p>Langages</p>
+                    </div>
+                    <div class="tabs">
+                        <p>Frameworks</p>
+                    </div>
+                    <div class="tabs">
+                        <p>Logiciels</p>
+                    </div>
+        
+                    <div class="indicator"></div>
+                </div>
+        
+                <div class="tab-content">
+                    <!--     Onglet langages     -->
+                    <div class="tab-content-item">
+                        <div class="grid md:grid-cols-2 gap-3 md:gap-4 my-2 md:my-3 p-4  bg-slate-50 dark:bg-slate-800 rounded-lg">
+                
+                            <div class="col-span-1">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_python.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">PYTHON</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">80%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-span-1">    
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_sql.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">    
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">SQL</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">85%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-span-1">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_html.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">HTML</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">95%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="md:col-start-2">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_css.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">CSS</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">85%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-span-1">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_javascript.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">Javascript</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">70%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-span-1">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_r.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">R</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">80%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-span-1">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_dax.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">DAX</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">70%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-span-1">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_dart.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">Dart</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">60%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!--      Onglet frameworks    -->
+                    <div class="tab-content-item">
+                        <div class="grid md:grid-cols-2 gap-3 md:gap-4 my-2 md:my-3 p-4  bg-slate-50 dark:bg-slate-800 rounded-lg">
+                
+                            <div class="col-span-1">       
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_dax.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">Django / REST API</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">85%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-span-1">   
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_dax.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">     
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">Scikit-learn / Tensorflow</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">75%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-span-1">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_dax.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">Pandas / numpy</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">75%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="md:col-start-2">   
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_dax.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">     
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">Matplotlib / seaborn</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">80%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+    
+                            <div class="col-span-1">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_dax.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">NLTK</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">70%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-span-1">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_dax.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">Flutter</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">75%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-span-1">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_dax.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">Tailwind CSS</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">90%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-span-1">        
+                                <div class="grid grid-cols-12">
+                                    <div class="col-start-1 p-1 col-span-1 h-full rounded-full">
+                                        <img src="{% static 'img/logo/logo_dax.png' %}" class="h-full">
+                                    </div>
+                                    <div class="col-start-2 col-span-10">
+                                        <div class="flex justify-between mb-1">
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">Dart</span>
+                                            <span class="text-sm font-medium text-blue-700 dark:text-white">60%</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!-- *********************** Onglet logiciel ***********************-->
+                    <!-- <div class="tab-content-item">
+                        <p>Tab 3 Content</p>
+                    </div> -->
+                </div>
+            </div>
+            <!-- End tabs -->
+        </div>
+
+        <!-- ############ Page 4 : Résumé ###############-->
+        <div class="container flex flex-wrap w-full min-h-screen justify-center p-2 md:p-5" id="apropos">
+            <div class="my-2 text-center w-full">
+                <span class="font-bold dark:text-gray-100 text-gray-800 text-2xl">RESUME</span> 
+                <div class="w-full bg-gray-200 rounded-full my-4 h-0.5 dark:bg-gray-700 items-center justify-center">
+                    <div class="bg-blue-600 h-0.5 rounded-full justify-center items-center" style="width: 52%"></div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 w-full p-2 ">
+                <div class="col-span-1 m-2">
+                    <span class="text-xl font-bold dark:text-gray-100 text-gray-800"> Profile <br/> 
+                        <hr class="w-full my-2 "/>
+                        <i class="bi bi-circle"></i> ABDOUL HABOU
+                    </span>
+                    <div class="border-s-2 mx-2 p-2 col-span-1 col-start-1 w-full flex flex-wrap items-start">
+                        <span class="text-xl font-bold dark:text-gray-100 text-gray-800"></span>
+                        <p class="text-sm text-gray-700 dark:text-gray-100 p-1"> Passionné par l’informatique, la programmation et les nouvelles technologies, 
+                            avec 2 ans d’expérience dans la programmation web avec le Framework 
+                            Django, et 1 an avec le framework PHP Laravel, fort d'une solide expérience 
+                            pratique et théorique je souhaiterai rejoindre votre équipe afin de mettre mes 
+                            compétences à votre service. 
+                        </p>
+                    </div>
+                </div>
+                <!-- *********************** Educations ************************-->
+                <div class="col-span-1 m-2">
+                    <span class="text-lg font-bold dark:text-gray-100 text-gray-800"> EDUCATIONS <br/> 
+                        <hr class="w-full my-2 "/>
+                        <i class="bi bi-circle"></i> MASTER 2 en DATA SCIENCE
+                    </span>
+                    <div class="border-s-2 mx-2 p-2 col-span-1 col-start-1 w-full flex flex-wrap items-start">
+                        <span class="text-xl font-bold dark:text-gray-100 text-gray-800"></span>
+                        <span class="p-1 m-1 rounded-md text-gray-800 dark:text-gray-100 text-sm bg-slate-200 dark:bg-slate-950"> 2021 - 2024 </span>
+                        <span class="text-gray-800 dark:text-gray-100 m-1"> 
+                            Ecole Nationale Superieure Polytechnique de Maroua
+                        </span>
+                    </div>
+
+                    <span class="text-lg font-bold dark:text-gray-100 text-gray-800">
+                        <i class="bi bi-circle"></i> DUT en Génie Informatique
+                    </span>
+                    <div class="border-s-2 mx-2 p-2 col-span-1 col-start-1 w-full flex flex-wrap items-start">
+                        <span class="text-xl font-bold dark:text-gray-100 text-gray-800"></span>
+                        <span class="p-1 m-1 rounded-md text-gray-800 dark:text-gray-100 text-sm bg-slate-200 dark:bg-slate-950"> 2019 - 2021 </span>
+                        <span class="text-gray-800 dark:text-gray-100 m-1"> 
+                            Institut Universitaire de Technologie (IUT) de Ngaoundéré
+                        </span>
+                    </div>
+
+                    <span class="text-lg font-bold dark:text-gray-100 text-gray-800">
+                        <i class="bi bi-circle"></i> Baccalaréat TI
+                    </span>
+                    <div class="border-s-2 mx-2 p-2 col-span-1 col-start-1 w-full flex flex-wrap items-start">
+                        <div class="container my-1">
+                            <span class="text-xl font-bold dark:text-gray-100 text-gray-800"></span>
+                            <span class="p-1 m-1 rounded-md text-gray-800 dark:text-gray-100 text-sm bg-slate-200 dark:bg-slate-950"> 2018 - 2019 </span>    
+                        </div>
+                        <span class="text-gray-800 dark:text-gray-100 m-1">
+                            Lycée Billingue de Garoua, Cameroun
+                        </span>
+                    </div>
+                </div>
+                <!-- *********************** Stages en entreprises *************************-->
+                <div class="md:col-span-2 m-2">
+                    <span class="text-lg font-bold dark:text-gray-100 text-gray-800"> STAGES EN ENTREPRISES <br/> 
+                        <hr class="w-full my-2 "/>
+                    </span>
+
+                    <div class="md:grid md:grid-cols-2">
+                        <div class="conatiner">
+                            <span class="text-lg font-bold dark:text-gray-100 text-gray-800">
+                                <i class="bi bi-circle"></i> Responsable IT
+                            </span>
+                            <div class="border-s-2 mx-2 p-2 col-span-1 col-start-1 w-full flex flex-wrap items-start">
+                                <div class="container">
+                                    <span class="text-xl font-bold dark:text-gray-100 text-gray-800"></span>
+                                    <span class="p-1 rounded-md text-gray-800 dark:text-gray-100 text-sm bg-slate-200 dark:bg-slate-950"> février – juin 2024 </span>    
+                                </div>
+                                <span class="text-gray-800 dark:text-gray-100 m-1 italic">
+                                    Hôpital Général de Garoua, Cameroun
+                                </span>
+                                <div class="container p-2 mx-2 text-sm text-gray-700 dark:text-gray-100">
+                                    <ul class="list-disc">
+                                        <li class=""> Concevoir et déployer une plateforme d’optimisation de soins </li>
+                                        <li class=""> Concevoir et intégrer un modèle de diagnostic à l’aide du ML </li>
+                                        <li class=""> Intégrer un système de reporting pour générer un dossier médical </li>
+                                        <li class=""> Déployer la plateforme sur le serveur Local de l’hôpital et configurer le réseau LAN </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="conatiner">
+                            <span class="text-lg font-bold dark:text-gray-100 text-gray-800">
+                                <i class="bi bi-circle"></i> Administrateur BD
+                            </span>
+                            <div class="border-s-2 mx-2 p-2 col-span-1 col-start-1 w-full flex flex-wrap items-start">
+                                <div class="container">
+                                    <span class="text-xl font-bold dark:text-gray-100 text-gray-800"></span>
+                                    <span class="p-1 rounded-md text-gray-800 dark:text-gray-100 text-sm bg-slate-200 dark:bg-slate-950"> juillet – septembre 2023 </span>    
+                                </div>
+                                <span class="text-gray-800 dark:text-gray-100 m-1 italic">
+                                    Hôpital Général de Garoua, Cameroun
+                                </span>
+                                <div class="container p-2 mx-2 text-sm text-gray-700 dark:text-gray-100">
+                                    <ul class="list-disc">
+                                        <li class=""> Créer une application de gestion des matériels </li>
+                                        <li class=""> Générer des rapports, d’états d’impression </li>
+                                        <li class=""> Maintenir des applications/équipements au service technique. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="conatiner">
+                            <span class="text-lg font-bold dark:text-gray-100 text-gray-800">
+                                <i class="bi bi-circle"></i> Gestionnaire SI 
+                            </span>
+                            <div class="border-s-2 mx-2 p-2 col-span-1 col-start-1 w-full flex flex-wrap items-start">
+                                <div class="container">
+                                    <span class="text-xl font-bold dark:text-gray-100 text-gray-800"></span>
+                                    <span class="p-1 rounded-md text-gray-800 dark:text-gray-100 text-sm bg-slate-200 dark:bg-slate-950"> juillet – septembre 2022 </span>    
+                                </div>
+                                <span class="text-gray-800 dark:text-gray-100 m-1 italic">
+                                    Hôpital Régional de Garoua, Cameroun
+                                </span>
+                                <div class="container p-2 mx-2 text-sm text-gray-700 dark:text-gray-100">
+                                    <ul class="list-disc">
+                                        <li class=""> Mise à jour du logiciel de gestion du service d’hospitalisation </li>
+                                        <li class=""> Maintenance de la base de données du logiciel de gestion du service d’hospitalisation </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="conatiner">
+                            <span class="text-lg font-bold dark:text-gray-100 text-gray-800">
+                                <i class="bi bi-circle"></i> Analyste, programmeur web
+                            </span>
+                            <div class="border-s-2 mx-2 p-2 col-span-1 col-start-1 w-full flex flex-wrap items-start">
+                                <div class="container">
+                                    <span class="text-xl font-bold dark:text-gray-100 text-gray-800"></span>
+                                    <span class="p-1 rounded-md text-gray-800 dark:text-gray-100 text-sm bg-slate-200 dark:bg-slate-950"> juillet – septembre 2022 </span>    
+                                </div>
+                                <span class="text-gray-800 dark:text-gray-100 m-1 italic">
+                                    Hôpital Régional de Garoua, Cameroun
+                                </span>
+                                <div class="container p-2 mx-2 text-sm text-gray-700 dark:text-gray-100">
+                                    <ul class="list-disc">
+                                        <li class=""> Concevoir une plateforme de gestion des services d'hospitalisation </li>
+                                        <li class=""> Effectuer une analyse des besoins du personnel </li>
+                                        <li class=""> Modeliser les différentes fonctionnlités du système </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- *********************** Expériences professionnelles *************************-->
+                <div class="md:col-span-2 m-2">
+                    <span class="text-lg font-bold dark:text-gray-100 text-gray-800"> EXPERIENCES PROFESSIONNELLES <br/> 
+                        <hr class="w-full my-2 "/>
+                    </span>
+
+                    <div class="md:grid md:grid-cols-2">
+                        <div class="conatiner">
+                            <span class="text-lg font-bold dark:text-gray-100 text-gray-800">
+                                <i class="bi bi-circle"></i> DATA SCIENTIST, bénévole
+                            </span>
+                            <div class="border-s-2 mx-2 p-2 col-span-1 col-start-1 w-full flex flex-wrap items-start">
+                                <div class="container">
+                                    <span class="text-xl font-bold dark:text-gray-100 text-gray-800"></span>
+                                    <span class="p-1 rounded-md text-gray-800 dark:text-gray-100 text-sm bg-slate-200 dark:bg-slate-950"> février – avril 2024 </span>    
+                                </div>
+                                <span class="text-gray-800 dark:text-gray-100 m-1 italic">
+                                    GEHMIT, Douala Cameroun
+                                </span>
+                                <div class="container p-2 mx-2 text-sm text-gray-700 dark:text-gray-100">
+                                    <ul class="list-disc">
+                                        <li class=""> Analyser les tendances de la pollution de l’air </li>
+                                        <li class=""> Créer un système de prédiction de la qualité de l’air </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="conatiner">
+                            <span class="text-lg font-bold dark:text-gray-100 text-gray-800">
+                                <i class="bi bi-circle"></i> Enquêteur
+                            </span>
+                            <div class="border-s-2 mx-2 p-2 col-span-1 col-start-1 w-full flex flex-wrap items-start">
+                                <div class="container">
+                                    <span class="text-xl font-bold dark:text-gray-100 text-gray-800"></span>
+                                    <span class="p-1 rounded-md text-gray-800 dark:text-gray-100 text-sm bg-slate-200 dark:bg-slate-950"> juillet – septembre 2023 </span>    
+                                </div>
+                                <span class="text-gray-800 dark:text-gray-100 m-1 italic">
+                                    Media Intelligence, Douala Cameroun
+                                </span>
+                                <div class="container p-2 mx-2 text-sm text-gray-700 dark:text-gray-100">
+                                    <ul class="list-disc">
+                                        <li class=""> Effectuer des enquêtes et renseigner sur la plateforme </li>
+                                        <li class=""> Etablir un profil pour chaque enquêté </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ############ Page 5 : PORTFOLIO ###############-->
+            <div class="container flex flex-col w-full min-h-screen justify-items-start p-2 md:p-5" id="portfolio">
+                <div class="my-2 text-center w-full">
+                    <span class="font-bold dark:text-gray-100 text-gray-800 text-2xl">PORTFOLIO</span> 
+                    <div class="w-full bg-gray-200 rounded-full my-4 h-0.5 dark:bg-gray-700 items-center justify-center">
+                        <div class="bg-blue-600 h-0.5 rounded-full justify-center items-center" style="width: 72%"></div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full p-2">
+                    <div class="col-span m-1 p-2 bg-slate-200 dark:bg-slate-950 rounded-md justify-center flex flex-wrap hover:shadow-lg cursor-pointer" data-modal-target="TranscriptionLanguage" data-modal-toggle="TranscriptionLanguage" type="button">
+                        <img src="{% static 'img/portfolio/detection.png' %}" class="h-2/4 w-full" alt="">
+                        <span class="m-2 text-gray-800 dark:text-gray-100 items-start text-md font-bold flex">
+                            Système de transcription du langage de signe
+                        </span>
+                        <div class="container justify-center flex m-auto text-slate-900 dark:text-slate-100 p-1">
+                            <span class="p-1 m-1 text-sm rounded-md bg-slate-100 dark:bg-slate-900"> Django </span>
+                            <span class="p-1 m-1 text-sm rounded-md bg-slate-100 dark:bg-slate-900"> Deep Learning </span>
+                            <span class="p-1 m-1 text-sm rounded-md bg-slate-100 dark:bg-slate-900"> Html </span>
+                        </div>
+                    </div>
+
+                    <div class="col-span m-1 p-2 bg-slate-200 dark:bg-slate-950 rounded-md justify-center flex flex-wrap hover:shadow-lg cursor-pointer" data-modal-target="MobileStore" data-modal-toggle="MobileStore" type="button">
+                        <img src="{% static 'img/portfolio/MobileStore.png' %}" class="h-2/4 w-full" alt="">
+                        <span class="m-2 text-gray-800 dark:text-gray-100 items-start text-md font-bold flex">
+                            Site web de vente en ligne
+                        </span>
+                        <div class="container justify-center flex m-auto text-slate-900 dark:text-slate-100 p-1">
+                            <span class="p-1 m-1 text-sm rounded-md bg-slate-100 dark:bg-slate-900"> Django </span>
+                            <span class="p-1 m-1 text-sm rounded-md bg-slate-100 dark:bg-slate-900"> Html </span>
+                            <span class="p-1 m-1 text-sm rounded-md bg-slate-100 dark:bg-slate-900"> Bootstrap </span>
+                        </div>
+                    </div>
+
+                    <div class="col-span m-1 p-2 bg-slate-200 dark:bg-slate-950 rounded-md justify-center flex flex-wrap hover:shadow-lg cursor-pointer" data-modal-target="PredictionSystem" data-modal-toggle="PredictionSystem" type="button">
+                        <img src="{% static 'img/portfolio/LePredicteur.png' %}" class="h-2/4 w-full" alt="">
+                        <span class="m-2 text-gray-800 dark:text-gray-100 items-start text-md font-bold flex">
+                            Système de prédiction du prix des vehicules
+                        </span>
+                        <div class="container justify-center flex m-auto text-slate-900 dark:text-slate-100 p-1">
+                            <span class="p-1 m-1 text-sm rounded-md bg-slate-100 dark:bg-slate-900"> Machine Learning </span>
+                            <span class="p-1 m-1 text-sm rounded-md bg-slate-100 dark:bg-slate-900"> Django </span>
+                            <span class="p-1 m-1 text-sm rounded-md bg-slate-100 dark:bg-slate-900"> Html </span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- ############### Page 6 : SERVICES ###################-->
+            <div class="container flex flex-col w-full min-h-screen justify-items-start p-2 md:p-5" id="portfolio">
+                <div class="my-2 text-center w-full">
+                    <span class="font-bold dark:text-gray-100 text-gray-800 text-2xl"> SERVICES </span> 
+                    <div class="w-full bg-gray-200 rounded-full my-4 h-0.5 dark:bg-gray-700 items-center justify-center">
+                        <div class="bg-blue-600 h-0.5 rounded-full justify-center items-center" style="width: 92%"></div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full p-2">
+                    <div class="col-span m-1 p-2 bg-slate-200 dark:bg-slate-950 rounded-md justify-center flex flex-wrap hover:shadow-lg hover:bg-slate-300 hover:dark:bg-slate-100 cursor-pointer">
+                        <span class="m-2 text-gray-800 dark:text-gray-100 items-start text-md font-bold flex">
+                            Consultant en informatique
+                        </span>
+                        <div class="container flex m-auto p-1 justify-center">
+                            <i class="bi bi-airplane-fill"></i>
+                        </div>
+                        <div class="container justify-stretch flex m-auto text-slate-900 dark:text-slate-100 p-1">
+                            Nous fournissons des conseils et des orientations d'experts sur diverses questions liées aux technologies de l'information, telles que la stratégie technologique, la mise en œuvre et l'optimisation.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #############################################  -->            
+            
+        </div>
+        
+            
+    </div>
+
+
+    <!-- Modal pour le systeme de transcription du langage des signes-->
+    <div id="TranscriptionLanguage" tabindex="-1" aria-hidden="true" class="fixed backdrop-blur-md top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 max-h-full min-h-screen">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-slate-100 rounded-lg shadow dark:bg-slate-800">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-slate-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Système de transcription du langage des signes
+                    </h3>
+                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-slate-600 dark:hover:text-white" data-modal-hide="TranscriptionLanguage">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        C'est une plateforme de transcription de langage de signe dévéloppé avec le framework web Django qui utillise le modèle Deep Learning pré-entrainé (SSD MobileNet).
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        SSD MobileNet une architecture de réseau de neurones convolutifs (CNN), elle est choisie pour sa combinaison de précision et d'efficacité. Cette architecture est spécialement conçue pour des tâches de détection d'objets en temps réel, ce qui en fait un choix idéal pour la détection des signes dans des séquences vidéo.    
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <a href="https://github.com/Wahbs/Sign-Language-transcript"><button data-modal-hide="TranscriptionLanguage" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Visiter</button></a>
+                    <button data-modal-hide="TranscriptionLanguage" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
+
+
+    <!-- Modal pour le site web de vente en ligne-->
+    <div id="MobileStore" tabindex="-1" aria-hidden="true" class="fixed backdrop-blur-md top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 max-h-full min-h-screen">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-slate-100 rounded-lg shadow dark:bg-slate-800">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-slate-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Site web de vente en ligne
+                    </h3>
+                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-slate-600 dark:hover:text-white" data-modal-hide="MobileStore">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        Le projet que nous avons développé est un site web de marketplace basé sur le framework Django. Une marketplace en ligne est une plateforme qui permet aux vendeurs de proposer leurs produits à la vente et aux acheteurs de les parcourir, de les sélectionner et de les acheter, tout cela en un seul lieu centralisé.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        L'objectif de ce projet est de créer une solution web efficace et évolutive pour faciliter cette activité commerciale. Votre site web a été conçu pour offrir une interface facile à utiliser tout en restant assez flexible pour permettre une croissance à long terme afin de faciliter la mise en relation entre vendeurs et acheteurs en ligne. 
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <a href="https://github.com/Wahbs/E-commerce-django-web-app"><button data-modal-hide="MobileStore" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Visiter</button></a>
+                    <button data-modal-hide="MobileStore" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
+
+
+    <!-- Modal pour le systeme de prédiction du prix des vehicules-->
+    <div id="PredictionSystem" tabindex="-1" aria-hidden="true" class="fixed backdrop-blur-md top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 max-h-screen min-h-screen">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-slate-100 rounded-lg shadow dark:bg-slate-800">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-slate-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Système de prédiction du prix des vehicules
+                    </h3>
+                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-slate-600 dark:hover:text-white" data-modal-hide="PredictionSystem">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        Site web simple, facile d'utilisation où j'ai intégré le modèle de prédiction du prix des véhicules, il suffit juste de renseigner les informations necessaire
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        Ici nous avons utilisé le modèle de prédiction entraîné précédemment avec l'algorithme RandomForestRegressor(). le notebook de ce modèle se trouve <a href="https://github.com/Wahbs/Web_mining_Prediction_prix_voiture_Regression_lineaire_gradientBoost.git" class="text-blue-600 font-bold">ici</a> vous pouvez le consulter pour en savoir plus.
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <a href="https://github.com/Wahbs/Plateforme-prediction-prix-vehicule-avec-Django"><button data-modal-hide="PredictionSystem" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Visiter</button></a>
+                    <button data-modal-hide="PredictionSystem" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
+
+
+
+            <script>
+                const allTabsGroup = document.querySelectorAll(".tabs-group");
+        
+                allTabsGroup.forEach((tabsGroup) => {
+                    for (let i = 0; i < tabsGroup.children.length; i++) {
+                        const tabs = tabsGroup.children[i].querySelectorAll('.tabs');
+                        const tabContent = tabsGroup.children[i].querySelectorAll('.tab-content-item');
+                        const indicator = tabsGroup.children[i].querySelector('.indicator');
+                        const tabsContainer = tabsGroup.children[0];
+                        const content = tabsGroup.children[1].querySelectorAll('.tab-content-item');
+        
+                        /* if (indicator) {
+                            indicator.classList.add('bg-blue-500', 'h-0.5', 'absolute', 'bottom-0', 'left-0', 'transition-all', 'duration-200');
+                            indicator.style.width = `${100 / tabs.length}%`;
+                        } */
+        
+                        if (tabsContainer) {
+                            tabsContainer.classList.add( 'flex', 'flex-row', 'items-center', 'justify-center');
+                        }
+        
+                        if (content) {
+                            content.forEach((item) => {
+                                item.classList.add('hidden',);
+                            });
+                            content[0].classList.remove('hidden');
+                        }
+        
+                        const updateContent = (old, index) => {
+                            let oldContent = content[old / 100];
+                            let newContent = content[index];
+
+                            tabs[old / 100].classList.remove('bg-gray-200', 'dark:bg-slate-700');
+                            tabs[index].classList.add('bg-gray-200', 'dark:bg-slate-700');
+
+                            if ((old / 100) === index) return;
+        
+                            if (oldContent && newContent) {
+                                //oldContent.classList.add('absolute', 'opacity-0', 'transition-all', 'duration-200');
+                                oldContent.classList.add('opacity-0', 'transition-all', 'duration-200');
+                                newContent.classList.add('opacity-0', 'transition-all', 'duration-200');
+        
+                                setTimeout(() => {
+                                    oldContent.classList.remove('opacity-0', 'transition-all', 'duration-200');
+                                    oldContent.classList.add('hidden');
+        
+                                    newContent.classList.add('!opacity-100');
+        
+                                    newContent.classList.remove('!left-0', '!opacity-100', 'opacity-0', 'transition-all', 'duration-200');
+                                    newContent.classList.remove('hidden');
+                                }, 200);
+                            }
+                        }
+        
+                        tabs.forEach((tab, index) => {
+                            tab.classList.add('p-2', 'text-center', 'w-full', 'cursor-pointer', 'hover:bg-gray-300', 'dark:hover:bg-gray-500','transition-all', 'duration-200', 'rounded-lg');
+                            tab.addEventListener('click', () => {
+                                let old = (String(indicator.style.transform || 'translateX(0%)').split('translateX(')).filter(Boolean).join('').split('%)')[0];
+                                indicator.style.transform = `translateX(${index * 100}%)`;
+                                updateContent(old, index);
+                            })
+                        });
+        
+                    }
+                });
+            </script>
+{% endblock %}
