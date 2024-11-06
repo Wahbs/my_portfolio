@@ -982,6 +982,10 @@ select {
   margin-inline-start: 0.25rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
