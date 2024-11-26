@@ -1568,12 +1568,20 @@ select {
   transition-duration: 150ms;
 }
 
+.delay-\[300ms\] {
+  transition-delay: 300ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-\[600ms\] {
+  transition-duration: 600ms;
 }
 
 .hover\:bg-blue-800:hover {

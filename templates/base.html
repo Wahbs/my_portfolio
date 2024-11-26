@@ -7,7 +7,8 @@
     {% tailwind_css %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-    <link rel="stylesheet" href="{% static 'bootstrap-icone/font/bootstrap-icons.css' %}" />        
+    <link rel="stylesheet" href="{% static 'bootstrap-icone/font/bootstrap-icons.css' %}" /> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">       
     <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
     <title>Tout savoir sur moi !</title>
 
@@ -20,28 +21,13 @@
             document.documentElement.classList.remove('dark');
         }
     </script>
-    <script>
-      @keyframes appear {
-        from {
-          opacity: 0;
-          scale: 0.5;
-        }
-        to {
-          opacity: 1;
-          scale: 1;
-        }
-      }
-
-      .animate-fade-up {
-        animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
-      }
-    </script>
+    <script>document.documentElement.classList.add('js')</script>
+    <!--<script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>-->
+    
 </head>
 <body class="bg-slate-100 dark:bg-slate-900 flex flex-wrap w-full min-h-full">
     <!-- Navbar du site web -->
-    <nav class="bg-slate-50 border-slate-100 px-2 sm:px-4 shadow-sm py-2.5 fixed rounded w-full dark:bg-slate-800">
+    <nav class="bg-slate-50 border-slate-100 px-2 sm:px-4 shadow-sm py-2.5 relative rounded w-full dark:bg-slate-800 " >
         <div class="flex flex-wrap px-2 items-center justify-between mx-auto">
           <a href="{{ .Site.Params.homepage }}/" class="flex items-center">
                 <img src="{% static 'img/favicon.png' %}" class="h-6 mr-3 sm:h-9" alt="Logo site web" />
@@ -86,6 +72,12 @@
         </div>
       </nav>
     <!-- End of new HTML -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <main class="container w-screen min-h-full mx-auto flex flex-wrap">
         {% block content %}
 
